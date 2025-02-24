@@ -1,0 +1,30 @@
+.home {
+    padding: 60px 150px;
+}
+
+.home.dark {
+    background-color: var(--home-background-dark);
+    color: var(--text-primary-dark);
+}
+
+.home.light {
+    background-color: var(--home-background-light);
+    color: var(--text-primary-light);
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 60px 20px;
+    }
+    .filters {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+}

@@ -1,0 +1,15 @@
+:root {
+    --nav-background-dark: #1F2937;
+    --nav-background-light: #fefefe;
+    --home-background-dark: #111827;
+    --home-background-light: #eff1f3;
+    --text-primary-dark: #F3F4F6;
+    --text-primary-light: #111827;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

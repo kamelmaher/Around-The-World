@@ -1,0 +1,25 @@
+.nav {
+    padding: 20px 150px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav.dark {
+    color: var(--text-primary-dark);
+    background-color: var(--nav-background-dark);
+}
+
+.nav.light {
+    background-color: var(--nav-background-light);
+    color: var(--text-primary-light);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+}
