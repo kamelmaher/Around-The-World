@@ -1,8 +1,9 @@
 /** @format */
 
 import { Country } from "../types/CountryType";
+import { intial } from "../types/intialType";
 
-export const getRealCountry = (country): Country => {
+export const getRealCountry = (country: intial): Country => {
   let countryLanguages: string[] = [];
   let countryCurrencies: string[] = [];
   if (country.languages) {

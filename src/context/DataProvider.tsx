@@ -2,6 +2,7 @@ import { ReactNode, useEffect, useState } from "react"
 import { Country } from "../types/CountryType"
 import { getRealCountry } from "../utils/getRealCountry"
 import { dataContext } from "../Hooks/useData"
+import { intial } from "../types/intialType"
 type DataProvider = {
     children: ReactNode
 }
@@ -23,7 +24,7 @@ const DataProvider = ({ children }: DataProvider) => {
         try {
             fetch("https://restcountries.com/v3.1/all").then(response => response.json())
                 .then(data => {
-                    data.map(country => setCountries(prev => [...prev, getRealCountry(country)]))
+                    data.map((country: intial) => setCountries(prev => [...prev, getRealCountry(country)]))
                 })
         } catch {
             throw new Error()
