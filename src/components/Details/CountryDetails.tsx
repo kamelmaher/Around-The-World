@@ -8,7 +8,7 @@ const CountryDetails = ({ country }: CountryDetailsProps) => {
     return (
         <div className={styles.countryDetails}>
             <Detail>
-                <img src={country.flag} alt="" width={"100%"} />
+                <img src={country.flag} alt="" width={"100%"} loading="lazy" />
             </Detail>
             <Detail>
                 <div className={styles.details}>

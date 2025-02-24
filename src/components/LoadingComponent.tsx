@@ -7,7 +7,7 @@ const LoadingComponent = () => {
     return (
         <div style={{ textAlign: "center" }}>
             <div>
-                <img src={theme == "dark" ? loadingImgDark : loadingImgLight} alt="" />
+                <img src={theme == "dark" ? loadingImgDark : loadingImgLight} alt="" loading="lazy"/>
             </div>
             <div style={{ transform: "translateY(-70%)" }}>
                 <h3>No Results Found</h3>

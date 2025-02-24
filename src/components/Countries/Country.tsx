@@ -11,7 +11,7 @@ const Country = ({ country }: CountryProps) => {
     return (
         <Link to={`country/${country.name}`} className={`${styles.country} ${styles[theme]}`}>
             <div className={styles.countryImg}>
-                <img src={country.flag} alt="" />
+                <img src={country.flag} alt="" loading="lazy"/>
             </div>
             <div className={styles.countryDesc}>
                 <h4>{country.name}</h4>
