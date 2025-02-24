@@ -5,11 +5,11 @@ type MenuProviderProps = {
 }
 const MenuProvider = ({ children }: MenuProviderProps) => {
   const [showMenu, setShowMenu] = useState(false)
-  const handleChangeMenu = () => setShowMenu(prev => !prev)
+  const handleChangeMenu = (e: boolean) => setShowMenu(e)
   return (
     <menuContext.Provider value={{ showMenu, handleChangeMenu }}>
       {children}
-    </menuContext.Provider>
+    </menuContext.Provider >
   )
 }
 

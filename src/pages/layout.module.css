@@ -1,0 +1,20 @@
+.outlet {
+    padding: 60px 150px;
+    min-height: calc(100vh - 67px);
+}
+
+.outlet.dark {
+    background-color: var(--home-background-dark);
+    color: var(--text-primary-dark)
+}
+
+.outlet.light {
+    background-color: var(--home-background-light);
+    color: var(--text-primary-light)
+}
+
+@media (max-width: 768px) {
+    .outlet {
+        padding: 60px 20px;
+    }
+}

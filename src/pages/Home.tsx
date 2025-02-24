@@ -3,6 +3,7 @@ import styles from "./home.module.css"
 import { useTheme } from "../Hooks/useTheme"
 import SelectCountry from "../components/Home/SelectCountry"
 import MenuProvider from "../context/MenuProvider"
+import Container from "../components/Countries/Container"
 export const Home = () => {
     const { theme } = useTheme()
     return (
@@ -13,6 +14,7 @@ export const Home = () => {
                     <SelectCountry />
                 </MenuProvider>
             </div>
+            <Container />
         </div>
     )
 }

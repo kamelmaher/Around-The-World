@@ -4,9 +4,8 @@ import { useTheme } from "../../Hooks/useTheme"
 const ThemeButton = () => {
 
     const { theme, changeTheme } = useTheme()
-    console.log(theme)
     return (
-        <button className={`toggle_label `} onClick={changeTheme}>
+        <button className={`toggle_label `} onClick={() => changeTheme(theme == "dark" ? "light" : "dark")}>
             <input type="checkbox" id="mode" className="toggle" />
             <span className={`slider round ${theme == "light" && "slide"}`}>
                 <i className="fa-solid fa-moon fa-lg fa-spin moon"></i>

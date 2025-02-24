@@ -4,7 +4,7 @@ import { createContext, useContext } from "react";
 
 type MenuContext = {
   showMenu: boolean;
-  handleChangeMenu: () => void;
+  handleChangeMenu: (e:boolean) => void;
 };
 
 export const menuContext = createContext<MenuContext | null>(null);

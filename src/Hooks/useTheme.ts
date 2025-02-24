@@ -1,7 +1,7 @@
 /** @format */
 type ThemeContext = {
   theme: "dark" | "light";
-  changeTheme: () => void;
+  changeTheme: (theme: "dark" | "light") => void;
 };
 import { createContext, useContext } from "react";
 export const themeContext = createContext<ThemeContext | null>(null);

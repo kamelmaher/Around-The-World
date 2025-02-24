@@ -1,17 +1,19 @@
 import { Outlet } from "react-router-dom"
 import styles from "./layout.module.css"
 import Nav from "../components/Layout/Nav"
-import ThemeProvider from "../context/ThemeProvider"
+import { useTheme } from "../Hooks/useTheme"
+import DataProvider from "../context/DataProvider"
 export const Layout = () => {
+    const { theme } = useTheme()
     return (
-        <ThemeProvider>
-            <div className={styles.layout}>
+        <DataProvider>
+            <div>
                 <Nav />
-                <div className={styles.outlet}>
+                <div className={`${styles.outlet} ${styles[theme]}`}>
                     <Outlet />
                 </div>
             </div>
-        </ThemeProvider>
+        </DataProvider>
     )
 }
 

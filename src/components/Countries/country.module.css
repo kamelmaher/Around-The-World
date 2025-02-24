@@ -1,0 +1,60 @@
+.container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.country {
+    width: calc(100% / 4 - 20px);
+    min-width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.country.dark {
+    background-color: var(--nav-background-dark);
+    color: var(--text-primary-dark)
+}
+
+.country.light {
+    background-color: var(--nav-background-light);
+    color: var(--text-primary-light)
+}
+
+.countryImg {
+    height: 160px;
+}
+
+.countryImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.countryDesc {
+    margin-top: 10px;
+    color: inherit;
+}
+
+.countryDesc h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.countryDesc p {
+    margin-bottom: 4px;
+
+}
+
+.countryDesc p span {
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: space-around;
+    }
+}

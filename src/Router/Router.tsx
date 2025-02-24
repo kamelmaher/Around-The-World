@@ -2,6 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import { Layout } from "../pages"
 import { Home } from "../pages/Home"
 import { DetailsPage } from "../pages/DetailsPage"
+import ThemeProvider from "../context/ThemeProvider"
 
 
 const router = createBrowserRouter(
@@ -15,5 +16,7 @@ const router = createBrowserRouter(
     ))
 
 export const Router = () => {
-    return <RouterProvider router={router}></RouterProvider>
+    return <ThemeProvider>
+        <RouterProvider router={router} />
+    </ThemeProvider>
 }
