@@ -20,6 +20,7 @@ export const DetailsPage = () => {
         flag: "",
         region: ""
     })
+    
     useEffect(() => {
         setIsLoading(true)
         try {

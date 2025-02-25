@@ -9,7 +9,7 @@ const MenuProvider = ({ children }: MenuProviderProps) => {
   return (
     <menuContext.Provider value={{ showMenu, handleChangeMenu }}>
       {children}
-    </menuContext.Provider >
+    </menuContext.Provider>
   )
 }
 

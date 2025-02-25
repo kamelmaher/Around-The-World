@@ -4,6 +4,7 @@ type ThemeContextProps = {
     children: ReactNode
 }
 const ThemeProvider = ({ children }: ThemeContextProps) => {
+    
     useEffect(() => {
         const data = localStorage.getItem("theme")
         if (data) {
@@ -11,6 +12,7 @@ const ThemeProvider = ({ children }: ThemeContextProps) => {
             setTheme(ParsedData)
         }
     }, [])
+    
     const [theme, setTheme] = useState<"dark" | "light">("dark")
 
     const handleChangeTheme = (theme: "dark" | "light") => {

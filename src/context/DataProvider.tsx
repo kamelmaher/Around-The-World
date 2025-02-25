@@ -11,6 +11,7 @@ const DataProvider = ({ children }: DataProvider) => {
     const [isLoading, setIsLoading] = useState(false)
     const [searchVal, setSearchVal] = useState("")
     const [regionVal, setRegionVal] = useState("")
+    
     const handleSearchVal = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchVal(e.target.value)
     }

@@ -13,6 +13,7 @@ const Container = () => {
     const filteredCountries = searchCountry(searchVal, countries)
 
     const filteredByRegion = filterByRegion(regionVal, searchVal == "" ? countries : filteredCountries)
+    
     let finalData: CountryType[] = []
     if (searchVal != "" && regionVal == "") // Search Val Not Empty / Region is Empty
         finalData = filteredCountries
